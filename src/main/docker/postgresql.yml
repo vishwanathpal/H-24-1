@@ -1,0 +1,11 @@
+version: '2'
+services:
+  h241-postgresql:
+    image: postgres:12.1
+    # volumes:
+    #     - ~/volumes/jhipster/H241/postgresql/:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=H241
+      - POSTGRES_PASSWORD=
+    ports:
+      - 5432:5432
